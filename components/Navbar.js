@@ -13,7 +13,7 @@ export default function Navbar() {
       {/* Desktop Menu */}
       <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
         <li><a href="#home">Home</a></li>
-        <li><a href="#classes">Classes</a></li>
+        <li><a href="#about">Classes</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#trainers">Trainers</a></li>
         <li><a href="#pages">Pages</a></li>
@@ -25,8 +25,6 @@ export default function Navbar() {
       <div className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </div>
-
-      
     </nav>
   );
 }
